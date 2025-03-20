@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=Patua+One&display=swap');
+
+.react-datepicker-wrapper {
+    width: 100% !important;
+  }
+  
+  .react-datepicker__input-container input {
+    width: 100% !important;
+  }
+  
