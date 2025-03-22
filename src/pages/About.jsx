@@ -110,10 +110,15 @@ function About() {
             <div className={`organizations ${showScrollButtons ? 'flex overflow-x-auto' : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'} gap-6 mt-20 px-4 lg:px-0 min-h-[400px] scroll-smooth`}>
               {founders.map((founder) => (
                 <div key={founder.id} className="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+               
                   <div className="img flex justify-center">
                     <img src={founder.image} alt={founder.name} className="w-32 h-32 object-cover rounded-full" />
                   </div>
-                  <div className="text mt-4 text-center">
+                  <div className="title text-center">
+                  <h1 className='font-bold text-lg mt-6'>{founder.name}</h1>
+
+                  </div>
+                  <div className="text mt-2 text-center">
                     <p className="text-gray-800 text-lg font-semibold">
                       {founder.description}
                     </p>

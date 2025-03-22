@@ -374,7 +374,7 @@ const handleRatingSubmit = async (rating) => {
           <option value="pending">Pending</option>
           <option value="confirmed">Confirmed</option>
           <option value="completed">Completed</option>
-          <option value="canceled">Canceled</option>
+        
         </select>
 
         {/* Category Filter */}
@@ -466,9 +466,7 @@ const handleRatingSubmit = async (rating) => {
           <button className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => handleStatusChange(data.id, 'completed')}>
             Complete
           </button>
-          <button className="block px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => handleStatusChange(data.id, 'cancelled')}>
-            Cancel
-          </button>
+          
           <button
                             className="block px-4 py-2 text-red-600 hover:bg-gray-100"
                             onClick={() => handleRemoveBooking(data.id)}

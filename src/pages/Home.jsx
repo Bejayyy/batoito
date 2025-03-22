@@ -247,7 +247,7 @@ function Home() {
         className="text-white py-12 px-4 sm:px-6 md:px-8 bg-cover bg-center bg-no-repeat flex flex-col items-center mt-20"
       >
         <h2 
-          className="text-4xl sm:text-5xl font-bold text-center mb-15 uppercase  text-black tracking-widest mt-0"
+          className="text-4xl font-bold text-center mb-10 uppercase  text-black tracking-widest "
           style={{ fontFamily: 'Rozha One, sans-serif' }}
         >
           Services
@@ -276,7 +276,11 @@ function Home() {
                 className="w-11/12 max-w-sm mx-auto flex flex-col justify-between"
               >
                 {/* Main Image */}
-                <div className="relative w-full h-[300px] mx-auto">
+                <div className="relative w-full h-[300px] mx-auto cur"
+                onClick={() => {
+                  setSelectedServiceId(service.id);
+                  setIsModalOpen(true);
+                }}>
                   <img
                     src={service.mainImage}
                     alt={service.title}
@@ -324,10 +328,10 @@ function Home() {
 
         <section className="py-20 w-full">
           <h2 
-            className="text-4xl sm:text-5xl font-semibold text-center mb-10 uppercase text-black tracking-widest mt-6"
+            className="text-4xl font-semibold text-center mb-10 uppercase text-black tracking-widest mt-6"
             style={{ fontFamily: 'Rozha One, sans-serif' }}
           >
-            Portfolio
+            Gallery
           </h2>
 
           {loading ? (
@@ -341,7 +345,8 @@ function Home() {
                 <div className="w-full overflow-hidden">
                   <div
                     id="portfolio-row-1"
-                    className="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-2 pr-4"
+                    className="flex overflow-x-auto snap-x snap-mandatory space-x-4 pb-2 pr-4 cursor-pointer"
+                    
                     style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
                   >
                     {firstRowImages.map((image) => (

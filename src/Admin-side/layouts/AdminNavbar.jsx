@@ -105,7 +105,7 @@ const AdminNavbar = ({ onLogout }) => {
               }
             >
               <i className="fas fa-user-tie mr-3"></i> {/* Founder Icon */}
-              Founders
+              Organizations
             </NavLink>
           </li>
             {/* New NavLink for Contact Information */}

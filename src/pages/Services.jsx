@@ -64,14 +64,20 @@ function Services() {
 
       
 <section className="py-12 px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 uppercase">
+        <h2 className="text-4xl font-bold text-center mb-15 uppercase mb-14 text-black tracking-widest mt-0"
+          style={{ fontFamily: 'Rozha One, sans-serif' }}
+        >
           Services
         </h2>
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.id}
-              className="mx-auto flex flex-col justify-between h-full w-11/12"
+              className="mx-auto flex flex-col justify-between h-full w-11/12 cursor-pointer"
+              onClick={() => {
+                setSelectedServiceId(service.id);
+                setIsModalOpen(true);
+              }}
             >
               {/* Main Image */}
               <div className="relative w-full h-[350px]">

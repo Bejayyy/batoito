@@ -50,10 +50,10 @@ function Navbar() {
             <li className="py-2 md:py-0 text-center md:text-left">
             <NavLink
   to="/contact"
-  className="bg-black text-white border-2 border-white font-semibold px-4 py-2 rounded-full 
-             hover:bg-white hover:text-black hover:border-[#FEAD5F] hover:scale-105 
-             transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
-  onClick={() => setIsOpen(false)}
+  className="bg-black text-white border-2 border-white font-semibold px-4 py-2 rounded-full
+  hover:bg-[#FEAD5F] hover:text-white hover:border-[#ffff] hover:scale-105
+  transition-all duration-300 ease-in-out shadow-md hover:shadow-lg"
+onClick={() => setIsOpen(false)}
 >
   Book Now!
 </NavLink>
